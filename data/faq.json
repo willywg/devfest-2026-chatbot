@@ -1,0 +1,10 @@
+[
+  { "id": "fecha-lugar", "pregunta": "¿Cuándo y dónde es el DevFest Piura 2026?", "respuesta": "El sábado 28 de noviembre de 2026, de 9:00 a. m. a 6:00 p. m., en la Universidad de Piura (UDEP)." },
+  { "id": "organiza", "pregunta": "¿Quién organiza el DevFest Piura?", "respuesta": "Google Developer Group (GDG) Piura, la comunidad de desarrolladores de Google en Piura." },
+  { "id": "piura-ai", "pregunta": "¿Qué es Piura AI?", "respuesta": "Una comunidad de Piura que reúne a personas que construyen con inteligencia artificial. Organiza charlas, talleres y encuentros." },
+  { "id": "requisitos-taller", "pregunta": "¿Qué necesito para el taller de agentes de código?", "respuesta": "Laptop, un agente de código con sesión iniciada, Node.js 24, git, GitHub CLI con sesión, una API key gratuita de Google AI Studio y el skill PRP Manager. La guía está en willywg.com/devfest-2026/preparacion." },
+  { "id": "que-es-prp", "pregunta": "¿Qué es un PRP?", "respuesta": "Un Product Requirements Prompt: una especificación con el objetivo, el contexto del repositorio, los pasos y las validaciones para que un agente de código implemente una funcionalidad en una sola pasada." },
+  { "id": "prp-manager", "pregunta": "¿Qué es PRP Manager y dónde lo consigo?", "respuesta": "Un skill open source para inicializar, generar y ejecutar PRPs con cualquier agente compatible con skills. Está en github.com/willywg/prp-manager." },
+  { "id": "modelo", "pregunta": "¿Qué modelo usa el chatbot del taller?", "respuesta": "gemini-3.5-flash-lite con la API key gratuita de Google AI Studio. Si está saturado, el respaldo es gemma-4-31b-it." },
+  { "id": "entradas", "pregunta": "¿Cómo consigo mi entrada al DevFest?", "respuesta": "Las entradas se publican en los canales oficiales de GDG Piura." }
+]

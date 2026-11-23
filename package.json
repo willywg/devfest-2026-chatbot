@@ -7,7 +7,9 @@
     "ask": "tsx scripts/ask.ts",
     "typecheck": "tsc",
     "doctor": "tsx scripts/doctor.ts",
-    "build": "vite build"
+    "build": "vite build",
+    "ingest": "tsx scripts/ingest.ts",
+    "search": "tsx scripts/search.ts"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "langchain": "^1.6.7",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "sqlite-vec": "^0.1.9",
     "zod": "^4.6.7"
   },
   "devDependencies": {
