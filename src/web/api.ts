@@ -1,12 +1,15 @@
-import type { ChatMessage } from "../shared";
+import type { ChatMessage, ChatResponse } from "../shared";
 
-/**
- * Envía la conversación y devuelve la respuesta del asistente.
- *
- * TAREA 2: hoy es una respuesta simulada en el navegador. Hay que conectarla
- * al servidor (POST /api/chat) y manejar los errores.
- */
+/** Envía la conversación al servidor y devuelve la respuesta del asistente. */
 export async function sendMessage(messages: ChatMessage[]): Promise<string> {
-  await new Promise((r) => setTimeout(r, 600));
-  return `(simulado) Recibí: "${messages.at(-1)?.content ?? ""}"`;
+  const res = await fetch("/api/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ messages }),
+  });
+  const data = (await res.json().catch(() => ({}))) as Partial<ChatResponse> & { error?: string };
+  if (!res.ok || !data.reply) {
+    throw new Error(data.error ?? `El servidor respondió ${res.status}`);
+  }
+  return data.reply;
 }
