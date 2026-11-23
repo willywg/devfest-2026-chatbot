@@ -42,7 +42,7 @@ Si te atrasas, cámbiate a la rama de la tarea anterior y sigue desde ahí.
 | `main` | Punto de partida: chat simulado y agente sin cerebro |
 | `tarea-1-agente` | Agente de LangChain con Gemini y un system prompt |
 | `tarea-2-chat` | El chat del navegador conectado al agente |
-| `tarea-3-faq` | (Opcional) El agente consulta un FAQ con una herramienta |
+| `tarea-3-faq` | (Para casa) FAQ con embeddings de Gemini en SQLite y un retriever conectado al agente |
 
 ## Licencia
 
